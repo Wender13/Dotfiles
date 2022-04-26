@@ -1,0 +1,77 @@
+——————————Apps——————————
+
+sudo apt install ubuntu-restricted-extras nodejs gimp gnome-tweaks git nitrogen audacity shotcut tilix zsh fzf fonts-powerline snapd vlc rhythmbox fonts-firacode ifuse;
+
+sudo snap install authy spotify;
+
+em pacote deb: chrome, discord, vscode, onlyoffice;
+
+—————————Instalar grub—————————
+
+sudo grub-install;
+
+sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi;
+
+grub-customizer => output_file : /boot/efi/EFI/pop/grub.cfg;
+
+sudo update-grub
+
+————————Ativar touchpad————————
+
+sudo gedit /etc/default/grub
+
+i8042.nopnp=1 pci=nocrs quiet splash;
+
+—————Mudar terminal padrão—————
+
+sudo update-alternatives --config x-terminal-emulator
+
+————————Personalização—————————
+
+Extensões: - Bluetooth quick connect;
+	   - Sound input & output device chooser;
+	   - Transparent top bar;	
+
+Cursor: Vimix;
+
+Ícones: Kora;
+
+———————Configurar o GIT————————
+
+git config --global user.name "User";
+git config --global user.email "example@email.com";
+git config --global init.defaultBranch main;
+git config --global color.ui auto;
+
+git config --get user.name;
+git config --get user.email;
+
+ssh-keygen -C example@email.com;
+cat ~/.ssh/id_rsa.pub
+
+————————————Terminal————————————
+
+Padrão: ZSH
+Complemento: Oh my zshell
+
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh;
+cp ~/.zshrc ~/.zshrc.orig;
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc;
+chsh -s $(which zsh)
+
+Plugins: - k
+	 - git
+	 - zsh-interactive-cd
+	 - zsh-autosuggestions
+	 - zsh-syntax-highlighting
+	 
+Instalando os plugins: 
+	 - k: git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k;
+	 - zsh-interactive-cd: apenas coloque nos plugins;
+	 - zsh-autosuggestions: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions;
+	 - zsh-syntax-highlighting: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
+	 
+Tema: spaceship (precisa ser baixada e configurada)
+
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1;
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
