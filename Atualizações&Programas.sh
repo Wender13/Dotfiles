@@ -16,7 +16,7 @@ echo "————————————————————————�
 
 echo "—————————————————————————————Instalando programas———————————————————————————————"
 
-sudo apt install ubuntu-restricted-extras nodejs gimp gnome-tweaks nitrogen audacity shotcut tilix zsh fzf fonts-powerline snapd vlc rhythmbox fonts-firacode ifuse ranger tty-clock make wget neovim -y
+sudo apt install ubuntu-restricted-extras nodejs gimp gnome-tweaks nitrogen audacity shotcut tilix zsh fzf fonts-powerline snapd vlc rhythmbox fonts-firacode ifuse tty-clock make wget -y
 
 echo "—————————————————————————————Programas instalados———————————————————————————————"
 
