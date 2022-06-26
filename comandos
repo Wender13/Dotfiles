@@ -1,22 +1,37 @@
 ————————Ativar touchpad————————
 
+-- Ubuntu
+
 sudo gedit /etc/default/grub
 
 i8042.nopnp=1 pci=nocrs quiet splash;
 
+sudo update-grub
+
+-- Fedora
+
+sudo gedit /etc/default/grub
+
+pci=nocrs;
+
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
 ————————Personalização—————————
 
-Extensões: - Bluetooth quick connect;
-	   - Sound input & output device chooser;
-	   - Transparent top bar;
-	   - Windowoverlay icons;
-	   - User themes;	
+Extensões: - ArcMenu;
+	   - Bluetooth Quick Connect;
+	   - Blur my Shell;
+	   - Dash to Panel;
+	   - Desktop Icons NG (Ding);
+	   - Media Controls;
+	   - Sound Input & Output Device Chooser;
+	   - User Themes;	
 
 Cursor: Vimix;
 
-Ícones: Kora;
+Ícones: Reversal;
 
-Shell e aplicativos: Tokyonight Dark
+Shell e aplicativos: White Sur GTK Theme;
 
 ———————Configurar o GIT————————
 
