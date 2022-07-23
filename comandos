@@ -18,20 +18,13 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 ————————Personalização—————————
 
-Extensões: - ArcMenu;
-	   - Bluetooth Quick Connect;
-	   - Blur my Shell;
-	   - Dash to Panel;
-	   - Desktop Icons NG (Ding);
+Extensões: - Bluetooth Quick Connect;
 	   - Media Controls;
-	   - Sound Input & Output Device Chooser;
-	   - User Themes;	
+	   - Sound Input & Output Device Chooser;	
 
 Cursor: Vimix;
 
 Ícones: Reversal;
-
-Shell e aplicativos: White Sur GTK Theme;
 
 ———————Configurar o GIT————————
 

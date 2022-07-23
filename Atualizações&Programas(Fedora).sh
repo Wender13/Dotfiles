@@ -2,7 +2,7 @@
 
 echo "—————————————————————————————Atualizando o sistema——————————————————————————————"
 
-sudo dnf -y
+sudo dnf upgrade -y
 
 echo "———————————————————————————————Sistema atualizado———————————————————————————————"
 
