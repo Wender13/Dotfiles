@@ -23,6 +23,7 @@ echo "————————————————————————�
 deb_urls=(
     "https://example.com/file1.deb"
     "https://example.com/file2.deb"
+    "https://anytype-release.fra1.cdn.digitaloceanspaces.com/anytype_0.42.4_amd64.deb"
     # Adicione mais URLs conforme necessário
 )
 
@@ -99,6 +100,6 @@ sudo update-alternatives --config x-terminal-emulator
 echo "——————————————————————————Alternativas configuradas—————————————————————————————"
 
 # Acionando o script "ProgramasEmSnap.sh" após reiniciar
-echo "@reboot bash $HOME/Dotfiles/ProgramasEmSnap.sh" | crontab -
+echo "@reboot bash $HOME/Dotfiles/ProgramasEmSnapEFlatpak.sh" | crontab -
 
 read -p "Deseja reiniciar o sistema agora? (s/n): " confirm && [[ $confirm == [sS] ]] && sudo reboot

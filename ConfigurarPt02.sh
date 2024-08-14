@@ -9,6 +9,8 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 mv -f $HOME/Dotfiles/.zshrc $HOME/.zshrc
 
+dconf load / < ~/Dotfiles/keybinds.conf
+
 sudo mv -f $HOME/Dotfiles/changeWallpaper /bin/
 sudo chmod +x /bin/changeWallpaper  # Garantir que o arquivo seja executável
 sudo chmod +x $HOME/Dotfiles/configurar_brilho.sh
